@@ -1,0 +1,83 @@
+.modal-comment{
+    .modal-dialog{
+        .modal-content{
+            background: #f5f5f5;
+            border-radius: 0px;
+            border: none;
+            padding: 40px 40px;
+            .modal-header{
+                border-color: #d6dcca;
+                padding-top: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+                .close{
+                    position: absolute;
+                    z-index: 10;
+                    top: 15px;
+                    right: 15px;
+                    font-size: 40px;
+                    opacity: 1;
+                    text-shadow: none;
+                }
+                h3{
+                    color: #94988b;
+                    font-family: $regular;
+                    font-size: em(18);
+                    font-weight: normal;
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                }
+                h4{
+                    color: $green-text;
+                    font-weight: normal;
+                    font-size: em(30);
+                }
+            }
+            .modal-body{
+                padding-left: 0px;
+                padding-right: 0px;
+                .rating-box{
+                    margin-bottom: 15px;
+                    p{
+                        display: inline;
+                        color: $green-text;
+                    }
+                    ul{
+                        font-size: em(20);
+                        display: inline;
+                    }
+                }
+                .form-control{
+                    @include placeholderColor($green-text);
+                    border: solid 1px #bdbdbd;
+                    border-radius: 0px;
+                    font-family: 'Gotham-Book';
+                    font-size: em(16);
+                    color: $green-text;
+                    height: auto;
+                }
+                .checkbox{
+                    float: right;
+                    @include breakpoint(sm-down){
+                        float: left;
+                        margin-bottom: 20px;
+                    }
+                }
+                textarea{
+                    margin-bottom: 30px;
+                }
+                p{
+                    font-family: 'Gotham-Book';
+                    font-size: em(16);
+                    margin-bottom: 20px;
+                }
+                .btn{
+                    border-radius: 0px;
+                    padding: 10px 10px;
+                    font-weight: bold;
+                    font-size: em(18);
+                }
+            }
+        }
+    }
+}

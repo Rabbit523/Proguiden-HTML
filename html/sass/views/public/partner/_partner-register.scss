@@ -1,0 +1,85 @@
+.partner-register {
+    display: block;
+    margin: 50px 0px;
+    h2 {
+        @include title(28, $green);
+        margin: 0px 0px 20px 0px;
+        span {
+            color: $green-text;
+        }
+    }
+    .the-content {
+        display: block;
+        background: #FFF;
+        height: 100%;
+        padding: 30px;
+        @include breakpoint(sm-down) {
+            height: auto;
+        }
+        p {
+            font-family: 'Gotham-Book';
+            font-size: em(14);
+            color: $lightGray;
+        }
+    }
+    .wrapper-form {
+        display: block;
+        background: #FFF;
+        height: 100%;
+        padding: 20px 30px;
+        @include breakpoint(sm-down) {
+            margin-top: 30px;
+            padding: 20px 10px;
+            height: auto;
+        }
+        .title {
+            display: block;
+            margin-bottom: 20px;
+            h1 {
+                @include title(40, $green-text);
+                margin: 0;
+            }
+            p {
+                color: $lightGray;
+                font-size: em(22);
+            }
+        }
+        .form-group {
+            @extend .form-group-proguiden;
+            small {
+                color: $lightGray;
+                font-family: 'Gotham-Book';
+                margin-top: 10px;
+                display: block;
+            }
+        }
+        .checkbox-custom {
+            margin-top: 10px;
+        }
+        .wrapper-btn {
+            display: block;
+            margin-top: 20px;
+        }
+        .submited-message {
+            margin-top: 10px;
+            p {
+                display: none;
+                font-size: em(16);
+                font-weight: 500;
+                margin: 0;
+            }
+            &.error {
+                color: #db2222;
+                .error-msj {
+                    display: block;
+                }
+            }
+            &.success {
+                color: $green;
+                .success-msj {
+                    display: block;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.box-top {
+    .form-group {
+        padding: 0px 10px;
+        margin-bottom: 0px;
+        @include breakpoint(sm-down) {
+            margin-bottom: 15px;
+        }
+        @include breakpoint(xs-down) {
+            padding: 0px 15px;
+        }
+        &.search {
+            input {
+                height: 50px;
+                border-radius: 0px;
+                border-color: #d7d7d7;
+                background-image: url(../assets/images/bg-search-green-admin.png);
+                background-repeat: no-repeat;
+                background-position: 95% center;
+                background-size: 20%;
+                padding-right: 40px;
+            }
+        }
+        &.label-green-arrow {
+            label {
+                font-size: em(10);
+                top: 5px;
+            }
+            select {
+                height: 50px;
+                font-size: em(12);
+                padding-bottom: 5px;
+                padding-top: 18px;
+            }
+        }
+    }
+}

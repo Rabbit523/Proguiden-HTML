@@ -1,0 +1,31 @@
+.header-credit-card {
+    display: block;
+    padding: 60px 0;
+    background: #FFF;
+    h1 {
+        font-weight: bold;
+        font-size: em(40);
+        margin: 0;
+        @include breakpoint(sm-down) {
+            font-size: em(30);
+        }
+        span {
+            color: $green;
+        }
+    }
+    p {
+        color: #939d81;
+        font-size: em(20);
+        font-weight: 500;
+        margin: 20px 0px 0px;
+        line-height: 22px;
+    }
+    .icon {
+        color: $green;
+        font-size: em(140);
+        line-height: 0.8;
+        @include breakpoint(sm-down) {
+            font-size: em(80);
+        }
+    }
+}

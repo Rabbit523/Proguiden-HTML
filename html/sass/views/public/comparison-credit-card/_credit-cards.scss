@@ -1,0 +1,293 @@
+.credit-cards {
+    .header-list {
+        border: solid 1px #e3e6dc;
+        display: inline-block;
+        width: 100%;
+        font-weight: 500;
+        color: #818181;
+        font-size: em(12);
+        padding: 20px 0px;
+        margin: 0px 0px 30px 0px;
+        @include breakpoint(xs-down) {
+            display: none;
+        }
+        >div {
+            display: block;
+            float: left;
+            padding: 0px 10px;
+            min-height: 1px;
+            &.credit {
+                width: 25%;
+                @include breakpoint(sm-down) {
+                    width: 20%;
+                }
+                @include breakpoint(xs-down) {
+                    width: 100%;
+                }
+            }
+            &.reviews {
+                width: 12%;
+                @include breakpoint(xs-down) {
+                    width: 100%;
+                }
+            }
+            &.income {
+                width: 9%;
+                @include breakpoint(xs-down) {
+                    width: 100%;
+                }
+            }
+            &.annual-fee {
+                width: 8%;
+                @include breakpoint(xs-down) {
+                    width: 100%;
+                }
+            }
+            &.postponement {
+                width: 9%;
+                @include breakpoint(xs-down) {
+                    width: 100%;
+                }
+            }
+            &.interest-rate {
+                width: 8%;
+                @include breakpoint(xs-down) {
+                    width: 100%;
+                }
+            }
+            &.credit-limit {
+                width: 10%;
+                @include breakpoint(xs-down) {
+                    width: 100%;
+                }
+            }
+            &.age {
+                width: 6%;
+                @include breakpoint(xs-down) {
+                    width: 100%;
+                }
+            }
+            &.actions {
+                width: 13%;
+                @include breakpoint(xs-down) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .card {
+        border: solid 1px #e3e6dc;
+        display: inline-block;
+        width: 100%;
+        font-weight: 500;
+        color: #818181;
+        font-size: em(12);
+        padding: 20px 0px;
+        margin: 0px 0px 30px 0px;
+        &:hover {
+            background: $green-bg;
+        }
+        .info-top {
+            padding-bottom: 15px;
+            display: inline-block;
+            width: 100%;
+            >div {
+                display: block;
+                float: left;
+                padding: 0px 10px;
+                min-height: 1px;
+                color: $green-text;
+                font-weight: 500;
+                small {
+                    display: block;
+                    color: #939d81;
+                }
+                &.credit {
+                    width: 25%;
+                    @include breakpoint(sm-down) {
+                        width: 20%;
+                    }
+                    @include breakpoint(xs-down) {
+                        width: 100%;
+                    }
+                    .figure {
+                        display: block;
+                        width: 40%;
+                        float: left;
+                        padding-right: 10px;
+                        @include breakpoint(sm-down) {
+                            width: 100%;
+                        }
+                        @include breakpoint(xs-down) {
+                            width: 40%;
+                        }
+                    }
+                    .content {
+                        display: block;
+                        float: left;
+                        width: 60%;
+                        margin-top: 15px;
+                        @include breakpoint(sm-down) {
+                            width: 100%;
+                        }
+                        @include breakpoint(xs-down) {
+                            width: 60%;
+                        }
+                    }
+                }
+                &.reviews {
+                    width: 12%;
+                    @include breakpoint(xs-down) {
+                        width: 50%;
+                    }
+                    a {
+                        color: $link;
+                    }
+                    .rating-circle {
+                        margin-top: 10px;
+                    }
+                }
+                &.income {
+                    width: 9%;
+                    padding-top: 10px;
+                    @include breakpoint(xs-down) {
+                        width: 25%;
+                    }
+                }
+                &.annual-fee {
+                    width: 8%;
+                    padding-top: 10px;
+                    @include breakpoint(xs-down) {
+                        width: 25%;
+                    }
+                }
+                &.postponement {
+                    width: 9%;
+                    padding-top: 10px;
+                    @include breakpoint(xs-down) {
+                        width: 25%;
+                    }
+                }
+                &.interest-rate {
+                    width: 8%;
+                    padding-top: 10px;
+                    @include breakpoint(xs-down) {
+                        width: 25%;
+                    }
+                }
+                &.credit-limit {
+                    width: 10%;
+                    padding-top: 10px;
+                    @include breakpoint(xs-down) {
+                        width: 25%;
+                    }
+                }
+                &.age {
+                    width: 6%;
+                    padding-top: 10px;
+                    @include breakpoint(xs-down) {
+                        width: 25%;
+                    }
+                }
+                &.actions {
+                    width: 13%;
+                    padding-top: 10px;
+                    @include breakpoint(xs-down) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .info-bot {
+            border-top: solid 1px #e3e6dc;
+            padding-top: 15px;
+            display: inline-block;
+            width: 100%;
+            >div {
+                display: block;
+                float: left;
+                padding: 0px 10px;
+                min-height: 1px;
+                color: $green-text;
+                font-weight: 500;
+                position: relative;
+                &.probided-by {
+                    width: 15%;
+                    @include breakpoint(xs-down){
+                        width: 100%;
+                        margin-bottom: 15px;
+                    }
+                    &:after {
+                        display: block;
+                        content: "";
+                        width: 1px;
+                        height: 45px;
+                        background: #e3e6dc;
+                        position: absolute;
+                        top: 0px;
+                        right: 0px;
+                    }
+                }
+                &.info-card {
+                    padding-right: 20px;
+                    @include breakpoint(xs-down){
+                        width: 100%;
+                        margin-bottom: 15px;
+                    }
+                    &:after {
+                        display: block;
+                        content: "";
+                        width: 1px;
+                        height: 45px;
+                        background: #e3e6dc;
+                        position: absolute;
+                        top: 0px;
+                        right: 0px;
+                    }
+                    img {
+                        float: left;
+                        margin-right: 10px;
+                    }
+                    span {
+                        margin-top: 10px;
+                        display: block;
+                        float: left;
+                        color: #939d81;
+                    }
+                }
+                &.features {
+                    span {
+                        display: block;
+                        float: left;
+                        padding: 20px 5px 0px;
+                        position: relative;
+                        color: #939d81;
+                        font-size: em(12);
+                        &:before {
+                            content: "";
+                            top: 5px;
+                            position: absolute;
+                            display: block;
+                            left: 50%;
+                            width: 5px;
+                            height: 10px;
+                            border: solid #7eb306;
+                            border-width: 0 2px 2px 0;
+                            -webkit-transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+                &.detail {
+                    width: 13%;
+                    float: right;
+                    @include breakpoint(xs-down){
+                        width: 100%;
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

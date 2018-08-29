@@ -1,0 +1,27 @@
+header{
+    background: $green;
+    color: #FFF;
+    padding: 20px 0px;
+    .info-user{
+        float: right;
+        @include breakpoint(sm-down){
+            float: left;
+        }
+        @include breakpoint(xs-down){
+            margin-top: 10px;
+        }        
+        .name-user{
+            display: block;
+            float: left;
+            font-family: $regular;
+            font-weight: 500;
+            font-size: em(16);
+            margin: 5px 15px 0px 0px;
+        }
+        .avatar{
+            display: block;
+            width: 37px;
+            float: left;
+        }
+    }
+}

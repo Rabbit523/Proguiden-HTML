@@ -1,0 +1,70 @@
+.btn {
+    outline: none;
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    &:hover,
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn-border-green {
+    border-radius: 5px;
+    border: solid 2px $green;
+    color: $green;
+    &:hover,
+    &:focus {
+        color: $green;
+    }
+    i {
+        margin-left: 20px;
+    }
+}
+
+.btn-green {
+    background: $green;
+    color: #FFF;
+    &:hover,
+    &:focus {
+        color: #FFF;
+    }
+}
+
+.btn-light-green {
+    background: #f8fbf1;
+    color: #818181;
+    border: solid 1px #d7d7d7;
+    border-radius: 0px;
+    box-shadow: 0px 2px 0px 0px #d7d7d7;
+    &:hover,
+    &:focus {
+        color: #FFF;
+        background: $green;
+        box-shadow: none;
+    }
+}
+
+.btn-yellow {
+    background: $yellow;
+    color: #000;
+    &:hover,
+    &:focus {
+        color: #000;
+    }
+}
+
+.btn-shadow {
+    box-shadow: 0px 2px 0px 0px #000;
+}
+
+.btn-border-blue {
+    border-color: $link;
+    color: $link;
+    &:hover,
+    &:focus {
+        color: #FFF;
+        background: $link
+    }
+}

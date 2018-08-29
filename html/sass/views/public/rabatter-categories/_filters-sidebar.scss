@@ -1,0 +1,96 @@
+.filters-sidebar{
+    .filter{
+        margin-bottom: 5px;
+        &.filter-category{
+            .filter-header{
+                background: #efb60a;
+                color: #FFF;
+                &:after{
+                    color: #ffd965;
+                }
+            }
+            .filter-body{
+                background: #dfa700;
+                color: #fff8e4;
+                border-top: solid 1px #ffd043;
+                ul{
+                    li{
+                        a{
+                            color: #fff8e4;
+                            &.current, &:hover{
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .filter-header{
+            padding: 15px 10px;
+            cursor: pointer;
+            color: $green-text;
+            text-transform: uppercase;
+            background: #FFF;
+            &:after{
+                content: "\f068";
+                font: normal normal normal 16px/1 FontAwesome;
+                float: right;
+                margin-top: 1px;
+                color: #d2ded2;
+            }
+            &.collapsed{
+                &:after{
+                    content: "\f067";
+                }
+            }
+        }
+        .filter-body{
+            padding: 15px 10px;
+            font-family: 'Gotham-Book';
+            border-top: solid 1px $green-bg;
+            color: $green-text;
+            background: #FFF;
+            ul{
+                list-style: none;
+                padding: 0px;
+                li{
+                    margin-bottom: 10px;
+                    span{
+                        float: right;
+                    }
+                    a{
+                        display: block;
+                        color: $green-text;
+                        &:hover{
+                            text-decoration: none;
+                            color: $green-text;
+                        }
+                        &.current{
+                            font-family: $regular;
+                        }
+                    }
+                    &:last-child{
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+            .checkbox{
+                display: block;
+                clear: both;
+                margin-bottom: 30px;
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+                span{
+                    float: right;
+                }
+            }
+            .btn-view-more{
+                background: #ebf9cb;
+                color: #6d9908;
+                border-radius: 0px;
+                font-family: $regular;
+            }
+        }
+    }
+}

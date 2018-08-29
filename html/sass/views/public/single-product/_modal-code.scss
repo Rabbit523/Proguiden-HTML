@@ -1,0 +1,79 @@
+.modal-code{
+    .modal-dialog{
+        .modal-content{
+            border-radius: 0px;
+            .modal-body{
+                padding-top: 0px;
+                padding-bottom: 0px;
+                @include breakpoint(sm-down){
+                    padding-bottom: 15px;
+                }
+                .close{
+                    position: absolute;
+                    color: #f5f5f5;
+                    right: 10px;
+                    z-index: 10;
+                    font-size: 50px;
+                    opacity: 1;
+                    top: 0px;
+                    @include breakpoint(sm-down){
+                        color: $green-text;
+                    }
+                }
+                h5{
+                    background: $yellow;
+                    color: #FFF;
+                    text-transform: uppercase;
+                    display: inline-block;
+                    padding: 5px;
+                }
+                strong{
+                    font-weight: normal;
+                    font-size: em(20);
+                    display: block;
+                }
+                form{
+                    border: solid 1px #dddddd;
+                    box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.08);
+                    width: 85%;
+                    margin: 15px auto;
+                    border-radius: 5px;
+                    .form-group{
+                        margin: 0px;
+                    }
+                    .btn-red{
+                        background: #c72727;
+                        color: #FFF;
+                        float: right;
+                        font-size: em(14);
+                    }
+                    .form-control{
+                        color: #414040;
+                        font-size: em(16);
+                        border: none;
+                        text-align: center;
+                        box-shadow: none;
+                    }
+                }
+                p{
+                    color: #414040;
+                    font-size: em(12);
+                    margin-bottom: 15px;
+                }
+                small{
+                    color: #929292;
+                    font-size: em(16);
+                    margin-top: 20px;
+                    display: inline-block;
+                    padding-bottom: 50px;
+                }
+                .img-right{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    -o-object-fit: cover;
+                }
+            }
+        }
+    }
+}

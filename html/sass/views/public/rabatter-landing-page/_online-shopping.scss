@@ -1,0 +1,123 @@
+.online-shopping{
+    display: block;
+    padding: 90px 0px;
+    @include breakpoint(md-down){
+        padding: 50px 0px;
+    }    
+    h2{
+        font-size: em(18);
+        margin: 0px;
+        color: $yellow;
+        span{
+            font-family: $regular;
+            font-weight: bold;
+            display: block;
+            font-size: em(25);
+            color: #2b2103;
+        }
+    }
+    .shopping-categories{
+        .shopping-category{
+            border: solid 1px $green-bg;
+            margin-top: 35px;
+            .content-category{
+                position: relative;
+                background: $green-bg;
+                margin-left: -15px;
+                height: 100%;
+                transition: all 0.2s ease-Out;
+                -moz-transition: all 0.2s ease-Out;
+                -o-transition: all 0.2s ease-Out;
+                -webkit-transition: all 0.2s ease-Out;
+                @include breakpoint(sm-down){
+                    margin-left: 0px;
+                }
+                &:hover{
+                    background: $yellow;
+                    .name{
+                        color: #FFF;
+                    }
+                    .sub-menu{
+                        opacity: 1;
+                        top: 58px;
+                        z-index: 1;
+                        visibility: visible;
+                        @include breakpoint(sm-down){
+                            top: 130px;
+                        }                        
+                        @include breakpoint(xs-down){
+                            top: 100px;
+                        }
+                    }
+                }
+                .name{
+                    display: block;
+                    text-align: center;
+                    color: #253500;
+                    padding: 12% 0px;
+                    min-height: 100%;
+                    transition: all 0.2s ease-Out;
+                    -moz-transition: all 0.2s ease-Out;
+                    -o-transition: all 0.2s ease-Out;
+                    -webkit-transition: all 0.2s ease-Out;
+                    @include breakpoint(lg-down){
+                        font-size: em(12);
+                    }
+                    @include breakpoint(sm-down){
+                        font-size: em(20);
+                    }
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+                .sub-menu{
+                    background: $green-bg;
+                    padding: 0px;
+                    visibility: hidden;
+                    position: absolute;
+                    width: 100%;
+                    left: 0;
+                    top: 130px;
+                    text-align: center;
+                    opacity: 0;
+                    transition: all .3s ease-in-out;
+                    -webkit-transition: all .3s ease-in-out;
+                    ul{
+                        list-style: none;
+                        padding: 20px 20px 10px 20px;;
+                        margin: 0px;
+                        text-align: left;
+                        li{
+                            a{
+                                display: block;
+                                color: #253500;
+                                font-size: em(14);
+                                margin-bottom: 5px;
+                                @include breakpoint(sm-down){
+                                    font-size: em(18);
+                                }                                
+                                &:hover{
+                                    color: $yellow;
+                                }
+                            }
+                        }
+                    }
+                    .view-more{
+                        display: block;
+                        background: #2b2103;
+                        color: #FFF;
+                        text-transform: uppercase;
+                        padding: 10px 0px;
+                        @include breakpoint(sm-down){
+                            font-size: em(20);
+                        }  
+                    }
+                }
+            }
+        }
+    }
+
+    .advertisment{
+        margin-top: 65px;
+    }
+}

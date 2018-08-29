@@ -1,0 +1,95 @@
+.list-popular-products{
+    display: block;
+    position: relative;
+    background: $green-bg;
+    padding: 100px 0px 0px;
+    h3{
+        font-size: em(18);
+        margin: 0px;
+        color: $green;
+        font-family: $regular;
+        font-weight: bold;
+        display: block;
+    }
+    .popular-products{
+        display: block;
+        background: #FFF;
+        margin-top: 25px;
+        border-bottom: 3px solid #FFF;
+        transition: all 0.3s ease-In;
+        -moz-transition: all 0.3s ease-In;
+        -o-transition: all 0.3s ease-In;
+        -webkit-transition: all 0.3s ease-In;
+        &:hover{
+            border-bottom: 3px solid $green;
+        }
+        figure{
+            display: block;
+            padding: 10px;
+        }
+        .top-box{
+            display: inline-block;
+            width: 100%;
+            clear: both;
+            border-bottom: 1px solid $green-bg;
+            padding-top: 30px;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            h4{
+                font-family: 'Gotham-Book';
+                font-size: em(16);
+                margin: 0px;
+                max-width: 75%;
+                float: left;
+                display: block;
+                @include breakpoint(md-down){
+                    max-width: none;
+                    width: 100%;
+                }
+            }
+            span{
+                display: block;
+                float: right;
+                font-size: em(16);
+                font-family: $regular;
+                max-width: 25%;
+                @include breakpoint(md-down){
+                    max-width: none;
+                    width: 100%;
+                }
+            }
+        }
+        .bot-box{
+            display: inline-block;
+            width: 100%;
+            clear: both;
+            small{
+                max-width: 65%;
+                float: left;
+                display: block;
+                color: $orange;
+                font-size: em(14);
+                font-family: 'Gotham-Book';
+                @include breakpoint(md-down){
+                    max-width: none;
+                    width: 100%;
+                }
+                strong{
+                    font-family: $regular;
+                }
+            }
+            .view-more{
+                display: block;
+                float: right;
+                font-size: em(16);
+                font-family: 'Gotham-Book';
+                max-width: 35%;
+                color: $green;
+                @include breakpoint(md-down){
+                    max-width: none;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

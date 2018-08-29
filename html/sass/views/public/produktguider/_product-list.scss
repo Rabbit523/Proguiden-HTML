@@ -1,0 +1,259 @@
+.product-list{
+    display: block;
+    padding: 0px 0px 40px 0px;
+    .product{
+        display: block;
+        margin-top: 40px;
+        border: solid 1px #d7d7d7;
+        background: #FFF;
+        position: relative;
+        &:after{
+            content: "";
+            background: $green;
+            width: 100%;
+            height: 3px;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            opacity: 0;
+            transition: all 0.2s ease-In;
+            -moz-transition: all 0.2s ease-In;
+            -o-transition: all 0.2s ease-In;
+            -webkit-transition: all 0.2s ease-In;
+        }
+        &:hover{
+            &:after{
+                opacity: 1;
+            }
+        }
+        figure{
+            a{
+                display: block;
+            }
+        }
+        .info-product{
+            padding: 20px;
+            time{
+                color: #7a7f6e;
+            }
+            h3{
+                color: #1c2702;
+                margin: 10px 0px 20px 0px;
+                a{
+                    color: #1c2702;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+            p{
+                line-height: 1.3;
+                color: #1c2702;
+                font-size: em(14);
+                font-family: 'Gotham-Book';
+                a{
+                    color: #1c2702;
+                    display: block;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+            .view-more{
+                color: $green;
+                margin-top: 15px;
+                margin-bottom: 5px;
+                display: block;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+        &.big{
+            figure{
+                height: 260px;
+                @include breakpoint(sm-down){
+                    height: auto;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    -o-object-fit: cover;
+                }
+                a{
+                    display: block;
+                    height: 100%;
+                }
+            }
+            .info-product{
+                h3{
+                    font-size: em(25);                    
+                }
+            }
+        }
+        &.small{
+            figure{
+                height: 125px;
+                @include breakpoint(sm-down){
+                    height: auto;
+                }
+                a{
+                    height: 100%;
+                    display: block;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    -o-object-fit: cover;
+                }
+            }
+            .info-product{
+                padding: 15px;
+                h3{
+                    font-size: em(21);                    
+                }
+            }
+            time{
+                font-size: em(14);
+            }
+        }
+        &.default{
+            figure{
+                height: 175px;
+                @include breakpoint(sm-down){
+                    height: auto;
+                }
+                a{
+                    height: 100%;
+                    display: block;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    -o-object-fit: cover;
+                }
+            }
+            .info-product{
+                padding: 15px;
+                h3{
+                    font-size: em(20);                    
+                }
+            }
+            time{
+                font-size: em(14);
+            }
+        }
+        &.medium{
+            width: 100%;
+            display: block;
+            float: left;
+            height: 110px;
+            @include breakpoint(sm-down){
+                height: auto;
+            }
+            figure{
+                width: 35%;
+                float: left;
+                height: 100%;
+                a{
+                    display: block;
+                    height: 100%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        -o-object-fit: cover;
+                    }
+                }
+            }
+            .info-product{
+                padding: 10px 20px;
+                width: 65%;
+                float: left;
+                @include breakpoint(md-down){
+                    time{
+                        font-size: em(12);
+                    }
+                }                
+                h3{
+                    font-size: em(20);
+                    margin-top: 5px;
+                    margin-bottom: 10px;
+                    @include breakpoint(md-down){
+                        font-size: em(16);
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+        &.extra-large{
+            width: 100%;
+            display: block;
+            float: left;
+            height: 200px;
+            @include breakpoint(sm-down){
+                height: auto;
+            }
+            figure{
+                width: 45%;
+                float: left;
+                height: 100%;
+                @include breakpoint(sm-down){
+                    width: 100%;
+                }
+                a{
+                    display: block;
+                    height: 100%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        -o-object-fit: cover;
+                    }
+                }
+            }
+            .info-product{
+                padding: 10px 20px;
+                width: 55%;
+                float: left;
+                @include breakpoint(sm-down){
+                    width: 100%;
+                }
+                h3{
+                    font-size: em(20);
+                    margin-top: 5px;
+                    margin-bottom: 10px;
+                    @include breakpoint(md-down){
+                        font-size: em(18);
+                    }
+                    @include breakpoint(sm-down){
+                        font-size: em(22);
+                    }
+                }
+                @include breakpoint(md-down){
+                    p{
+                        font-size: em(12);
+                        @include breakpoint(sm-down){
+                            font-size: em(16);
+                        }
+                    }
+                }                
+            }
+        }
+    }
+    .wrapper-btn{
+        margin: 40px 0px;
+        .btn{
+            font-size: em(22);
+            padding: 8px 20px;
+            margin-bottom: 15px;
+        }
+        small{
+            color: #596049;
+            font-size: em(12);
+        }
+    }
+}

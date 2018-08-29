@@ -1,0 +1,30 @@
+@import "global/main";
+
+.proguiden{
+    @import "shared/main";
+    @import "views/public/main"; 
+    background-color: $green;
+    font-family: $regular;
+    color: $gray;
+    font-size: $browser-context + px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    main{
+        background: #FFF;
+        display: block;
+        margin: 110px 0px 0px 0px;
+        padding: 0px;
+    }
+}
+
+.proguiden-portal{
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    &.members{
+        @import "views/private/members/main";
+    }
+    &.admin{
+        @import "views/private/admin/main";
+    }
+}

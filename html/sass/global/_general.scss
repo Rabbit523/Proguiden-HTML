@@ -1,0 +1,41 @@
+.col-centered {
+    float: none;
+    margin-right: -4px;
+    display: inline-block;
+    vertical-align: top;
+    @include breakpoint(xs-down) {
+        margin-right: 0px;
+    }
+}
+
+.row-centered {
+    text-align: center;
+}
+
+.no-gutter>[class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.flex-box {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+
+.full-width {
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+.tooltip {
+    >.tooltip-inner {
+        border-radius: 0px;
+    }
+}

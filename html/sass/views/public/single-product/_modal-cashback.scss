@@ -1,0 +1,112 @@
+.modal-cashback{
+    .modal-dialog{
+        .modal-content{
+            border-radius: 0px;
+            background: #f5f5f5;
+            border: none;
+            .modal-body{
+                padding-top: 0px;
+                padding-bottom: 0px;
+                .bg{
+                    height: 100%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .close{
+                    position: absolute;
+                    color: #f5f5f5;
+                    right: 10px;
+                    z-index: 10;
+                    font-size: 50px;
+                    opacity: 1;
+                    top: 0px;
+                    @include breakpoint(sm-down){
+                        color: $green-text;
+                    }
+                }
+                .info-modal{
+                    padding: 30px 30px;
+                }
+                h5{
+                    color: #2a1402;
+                    font-size: em(18);
+                    span{
+                        color: $orange;
+                    }
+                    margin: 0px 0px 20px 0px;
+                }
+                p{
+                    color: #2a1402;
+                    font-family: 'Gotham-Book';
+                    font-size: em(14);
+                    margin-bottom: 30px;
+                }
+                .btn-facebook{
+                    background: #4267b2 url("../assets/images/facebook-btn.png") no-repeat left center;
+                    background-size: contain;
+                    color: #FFF;
+                    margin-bottom: 15px;
+                    padding: 10px 10px;
+                    border-radius: 5px;
+                    border: solid 1px #4267b2;
+                }
+                .btn-google{
+                    background: #FFF url("../assets/images/google-btn.png") no-repeat left center;
+                    background-size: contain;
+                    color: #7a7a7a;
+                    border-radius: 5px;
+                    padding: 10px 10px;
+                    border: solid 1px #dddddd;
+                }
+                .separator{
+                    text-align: center;
+                    position: relative;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    p{
+                        margin: 0px;
+                        color: #7a7a7a;
+                        position: relative;
+                        z-index: 2;
+                        display: inline-block;
+                        background: #f5f5f5;
+                        padding: 0px 15px;
+                    }
+                    &:after{
+                        content: "";
+                        background: #ddd;
+                        height: 1px;
+                        display: block;
+                        position: absolute;
+                        width: 100%;
+                        right: 0px;
+                        top: 50%;
+                        z-index: 1;
+                    }
+                }
+                form{
+                    .input-group-addon{
+                        background: #FFF;
+                        border-color: #dddddd;
+                    }
+                    .form-control{
+                        @include placeholderColor(#7a7a7a);
+                        color: #7a7a7a;
+                        border: solid 1px #dddddd;
+                        padding: 10px;
+                        height: auto;
+                        border-radius: 0px 5px 5px 0px;
+                    }
+                    .btn-orange{
+                        background: $orange;
+                        color: #FFF;
+                        padding: 10px 10px;
+                    }
+                }
+            }
+        }
+    }
+}

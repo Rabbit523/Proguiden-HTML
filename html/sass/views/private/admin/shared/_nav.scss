@@ -1,0 +1,91 @@
+nav {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    min-height: 100%;
+    min-height: 100vh;
+    background: $green;
+    position: absolute;
+    z-index: 10;
+    width: $sidebar-width;
+    left: 0px;
+    transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    @include breakpoint(lg-down) {
+        width: 220px;
+    }
+    @media only screen and (max-width: 767.999px) {
+        &.close-sidebar {
+            left: -$sidebar-width;
+        }
+    }
+    .brand {
+        @extend .logo;
+        @include breakpoint(lg-down) {
+            font-size: 9px;
+            padding: 15px 0px 15px 5px;
+        }
+    }
+    ul {
+        list-style: none;
+        display: block;
+        padding: 30px 35px;
+        margin: 60px 0px;
+        text-align: center;
+        @include breakpoint(lg-down) {
+            padding: 30px 15px;
+        }
+        li {
+            font-size: em(16);
+            font-weight: 500;
+            display: block;
+            a {
+                display: block;
+                margin: 15px 0px;
+                padding: 15px 0px;
+                background: #89c307;
+                box-shadow: 0px 2px 5px 0px #6d9a06;
+                color: white;
+                transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+                -webkit-transition: all 0.3s ease-in-out;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+            &.active {
+                a {
+                    background: #FFF;
+                    color: $green;
+                }
+            }
+            &:hover {
+                &.active {
+                    a {
+                        background: #FFF;
+                        color: $green;
+                        box-shadow: 0px 2px 5px 0px #6d9a06;
+                    }
+                }
+                a {
+                    background: #6d9a06;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}
+
+.copyright {
+    color: white;
+    font-size: em(12);
+    text-transform: uppercase;
+    margin: 0px;
+    font-weight: 500;
+    a {
+        color: white;
+    }
+}

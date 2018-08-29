@@ -1,0 +1,116 @@
+.login{
+    padding: 100px 0px;
+    display: block;
+    background: url('../assets/images/bli-medlem-bg.jpg') no-repeat center center;
+    background-size: cover;
+    margin: 0px;
+    .title{
+        h1{
+            color: $green-text;
+            font-size: em(32);
+            margin: 0px 0px 30px 0px;
+        }
+    }
+    .login-form{
+        .btn-facebook{
+            background: #4267b2 url("../assets/images/facebook-btn.png") no-repeat left center;
+            background-size: contain;
+            color: #FFF;
+            margin-bottom: 15px;
+            padding: 10px 10px;
+            border-radius: 5px;
+            border: solid 1px #4267b2;
+            font-family: 'Gotham-Book';
+        }
+        .btn-google{
+            background: #FFF url("../assets/images/google-btn.png") no-repeat left center;
+            background-size: contain;
+            color: #7a7a7a;
+            border-radius: 5px;
+            padding: 10px 10px;
+            border: solid 1px #dddddd;
+            font-family: 'Gotham-Book';
+        }
+        .separator{
+            text-align: center;
+            position: relative;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            p{
+                margin: 0px;
+                color: #7a7a7a;
+                position: relative;
+                z-index: 2;
+                display: inline-block;
+                padding: 0px 15px;
+            }
+            &:after{
+                content: "";
+                background: #ddd;
+                height: 1px;
+                display: block;
+                position: absolute;
+                width: 40%;
+                right: 0px;
+                top: 50%;
+                z-index: 1;
+            }
+            &:before{
+                content: "";
+                background: #ddd;
+                height: 1px;
+                display: block;
+                position: absolute;
+                width: 40%;
+                left: 0px;
+                top: 50%;
+                z-index: 1;
+            }
+        }
+        form{
+            .input-group-addon{
+                background: #FFF;
+                border-color: #dddddd;
+            }
+            .form-control{
+                @include placeholderColor(#7a7a7a);
+                color: #7a7a7a;
+                border: solid 1px #dddddd;
+                padding: 10px;
+                height: auto;
+                border-radius: 0px 5px 5px 0px;
+                font-family: 'Gotham-Book';
+            }
+            input[type="password"]{
+                padding-right: 130px;
+            }
+            .remember{
+                position: absolute;
+                font-family: 'Gotham-Book';
+                color: #7a7a7a;
+                right: 10px;
+                top: 10px;
+                z-index: 10;
+            }
+            .btn-orange{
+                background: $orange;
+                color: #FFF;
+                padding: 10px 10px;
+            }
+            .checkbox{
+                margin: 0px 0px 20px;
+                font-family: 'Gotham-Book';
+            }
+        }
+        .note{
+            font-family: 'Gotham-Book';
+            display: block;
+            text-align: center;
+            margin: 20px auto 0px;
+            a{
+                color: $orange;
+                font-family: $regular;
+            }
+        }
+    }
+}

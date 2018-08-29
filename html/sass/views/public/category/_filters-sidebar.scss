@@ -1,0 +1,210 @@
+.filters-sidebar{
+    .filter{
+        margin-bottom: 5px;
+        &.filter-category{
+            .filter-header{
+                background: #6d9908;
+                color: #FFF;
+                &:after{
+                    color: #8db72d;
+                }
+            }
+            .filter-body{
+                background: rgba(109,153,8,1);
+                background: -moz-linear-gradient(left, rgba(109,153,8,1) 0%, rgba(85,120,4,1) 100%);
+                background: -webkit-gradient(left top, right top, color-stop(0%, rgba(109,153,8,1)), color-stop(100%, rgba(85,120,4,1)));
+                background: -webkit-linear-gradient(left, rgba(109,153,8,1) 0%, rgba(85,120,4,1) 100%);
+                background: -o-linear-gradient(left, rgba(109,153,8,1) 0%, rgba(85,120,4,1) 100%);
+                background: -ms-linear-gradient(left, rgba(109,153,8,1) 0%, rgba(85,120,4,1) 100%);
+                background: linear-gradient(to right, rgba(109,153,8,1) 0%, rgba(85,120,4,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d9908', endColorstr='#557804', GradientType=1 );
+                color: #e0f9a5;
+                border-top: solid 1px #8db72d;
+                ul{
+                    li{
+                        a{
+                            color: #e0f9a5;
+                            &.current, &:hover{
+                                color: #FFF;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.filter-slider{
+            form{
+                .item{
+                    padding: 0px 15px;
+                    display: block;
+                    float: left;
+                    width: 45%;
+                    position: relative;
+                    &:first-child{
+                        span{
+                            display: inline;
+                            position: absolute;
+                            right: 0px;
+                            top: 5px;
+                        }
+                    }
+                    &:last-child{
+                        span{
+                            display: inline;
+                            position: absolute;
+                            right: -17px;
+                            top: 5px;
+                        }
+                    }
+                    .form-control{
+                        border-color: #c1d5c1;
+                        border-radius: 0px;
+                        &:focus{
+                            box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(126, 179, 7, 0.54);
+                            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(126, 179, 7, 0.54);
+                        }
+                    }
+                }
+            }
+            .box-slider-price{
+                display: block;
+                width: 100%;
+                position: relative;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                .priceslider{
+                    position: relative;
+                    background: #dde3cf;
+                    height: 7px;
+                    width: 100%;
+                    margin: 0px auto;
+                    .sldier-base{
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                        z-index: 1;
+                        .slider-origin{
+                            position: absolute;
+                            height: 0;
+                            width: 0;
+                            top: -10px;
+                            .slider-handler{
+                                width: 25px;
+                                height: 25px;
+                                left: 0px;
+                                top: 0px;
+                                background: $green;
+                                cursor: pointer;
+                            }
+                        }
+                        .slider-connect{
+                            background: $green;
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            left: 0;
+                            bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+        &.filter-options{
+            .filter-body{
+                .box-options{
+                    span{
+                        display: block;
+                        float: left;
+                        border: solid 1px #c1d5c1;
+                        cursor: pointer;
+                        width: 32%;
+                        margin: 0px 1%;
+                        text-align: center;
+                        padding: 5px 0px;
+                        @include breakpoint(lg-down){
+                            width: 100%;
+                        }
+                        &:last-child{
+                            margin-right: 0px;
+                        }
+                        &:first-child{
+                            margin-left: 0px;
+                        }
+                        &.active{
+                            background: $green;
+                            border-color: $green;
+                            color: #FFF;
+                        }
+                    }
+                }
+            }
+        }
+        .filter-header{
+            padding: 15px 10px;
+            cursor: pointer;
+            color: $green-text;
+            text-transform: uppercase;
+            background: #FFF;
+            &:after{
+                content: "\f068";
+                font: normal normal normal 16px/1 FontAwesome;
+                float: right;
+                margin-top: 1px;
+                color: #d2ded2;
+            }
+            &.collapsed{
+                &:after{
+                    content: "\f067";
+                }
+            }
+        }
+        .filter-body{
+            padding: 15px 10px;
+            font-family: 'Gotham-Book';
+            border-top: solid 1px $green-bg;
+            color: $green-text;
+            background: #FFF;
+            ul{
+                list-style: none;
+                padding: 0px;
+                li{
+                    margin-bottom: 10px;
+                    span{
+                        float: right;
+                    }
+                    a{
+                        display: block;
+                        color: $green-text;
+                        &:hover{
+                            text-decoration: none;
+                            color: $green-text;
+                        }
+                        &.current{
+                            font-family: $regular;
+                        }
+                    }
+                    &:last-child{
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+            .checkbox{
+                display: block;
+                clear: both;
+                margin-bottom: 30px;
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+                span{
+                    float: right;
+                }
+            }
+            .btn-view-more{
+                background: #ebf9cb;
+                color: #6d9908;
+                border-radius: 0px;
+                font-family: $regular;
+            }
+        }
+    }
+}

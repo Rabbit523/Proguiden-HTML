@@ -1,0 +1,109 @@
+.content-single {
+    background: #eff6ef;
+    display: block;
+    padding: 50px 0;
+    article {
+        background: #FFF;
+        display: block;
+        padding: 30px 30px;
+        h2 {
+            color: $green-text;
+            font-weight: bold;
+            font-size: em(30);
+            margin: 0px 0px 20px 0px;
+        }
+        p {
+            font-family: $book;
+            font-size: em(14);
+            line-height: 23px;
+            color: $green-text;
+        }
+        h3 {
+            color: $green-text;
+            font-weight: bold;
+            font-size: em(20);
+            margin: 0px 0px 20px 0px;
+        }
+        .table {
+            font-family: $book;
+            color: $green-text;
+            margin-bottom: 30px;
+            strong {
+                font-family: $regular;
+                font-weight: bold;
+            }
+            a {
+                color: $link;
+            }
+            tr {
+                td {
+                    border: none;
+                }
+                &:nth-child(odd) {
+                    background: #eff6ef;
+                }
+            }
+        }
+        .wrapper-btn {
+            margin-top: 40px;
+        }
+    }
+    aside {
+        background: #FFF;
+        display: block;
+        padding: 30px 0px;
+        @include breakpoint(sm-down){
+        margin-top: 50px;
+        }
+        hr {
+            background-color: #d7d7d7;
+        }
+        h4 {
+            color: $green-text;
+            font-weight: bold;
+            font-size: em(20);
+            margin: 0px 0px 20px 0px;
+        }
+        .wrapper-img {
+            padding: 0px 20px;
+            display: block;
+        }
+        .wrapper-btn {
+            padding: 0px 20px;
+            display: block;
+        }
+        .content {
+            padding: 0px 20px;
+            display: block;
+            ul {
+                color: $green-text;
+                font-family: $book;
+                font-size: em(14);
+                line-height: 25px;
+                padding: 0px 0px 0px 15px;
+                li{
+                    position: relative;
+                }
+                &.check {
+                    list-style: none;
+                    li {
+                        &:before {
+                            content: "";
+                            top: 5px;
+                            position: absolute;
+                            display: block;
+                            left: -12px;
+                            width: 5px;
+                            height: 10px;
+                            border: solid $green;
+                            border-width: 0 2px 2px 0;
+                            -webkit-transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

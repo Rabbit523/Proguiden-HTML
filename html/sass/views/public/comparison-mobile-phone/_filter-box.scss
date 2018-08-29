@@ -1,0 +1,29 @@
+.filter-box {
+    background: $green-bg;
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: 0px;
+    .box-slider-widget {
+        padding-top: 20px;
+        margin-bottom: 50px;
+    }
+    .checkbox-custom {
+        font-size: em(12);
+        margin-bottom: 10px;
+        label {
+            padding-left: 30px;
+        }
+    }
+    .switch-control {
+        margin-top: 15px;
+        p {
+            color: $green;
+            margin: 0px;
+            font-size: em(12);
+        }
+    }
+    .label-green-arrow{
+        margin-top: 8px;
+    }
+}

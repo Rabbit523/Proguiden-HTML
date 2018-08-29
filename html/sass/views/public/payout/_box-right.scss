@@ -1,0 +1,116 @@
+.box-right {
+    .box {
+        display: block;
+        width: 100%;
+        padding: 30px 20px;
+        margin-bottom: 30px;
+        h4 {
+            font-family: $regular;
+            font-weight: bold;
+            font-size: em(24);
+            margin-top: 0px;
+        }
+        p {
+            color: $green-text;
+            font-family: 'Gotham-Book';
+            font-size: em(14);
+        }
+        &.green-box {
+            background: #f5ffde;
+            border: solid 1px #cae48f;
+            h4 {
+                color: $green;
+            }
+        }
+        &.blue-box {
+            background: #dbecff;
+            border: solid 1px #84acda;
+            h4 {
+                color: #0657b3;
+            }
+        }
+    }
+    .order-total {
+        background: #dbecff;
+        border: solid 1px #84acda;
+        padding: 30px 0px 0px;
+        h4 {
+            color: #0657b3;
+            font-family: $regular;
+            font-weight: bold;
+            font-size: em(24);
+            margin-top: 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        p {
+            color: $green-text;
+            font-family: 'Gotham-Book';
+            font-size: em(14);
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        table {
+            width: 100%;
+            margin-top: 30px;
+            thead {
+                tr {
+                    th {
+                        color: #0657b3;
+                        font-weight: bold;
+                        font-size: em(16);
+                        border-top: solid 1px #84acda;
+                        padding: 10px;
+                        border-bottom: solid 1px #84acda;
+                        &:first-child{
+                            padding-left: 20px;
+                        }
+                        &:last-child{
+                            text-align: right;
+                            padding-right: 40px;
+                        }
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        color: $green-text;
+                        font-size: em(14);
+                        padding: 10px;
+                        font-family: $book;
+                        &:first-child {
+                            padding-left: 20px;
+                            font-weight: bold;
+                        }
+                        &:last-child{
+                            text-align: right;
+                            padding-right: 40px;
+                        }
+                    }
+                }
+            }
+            tfoot {
+                tr {
+                    td {
+                        color: $green-text;
+                        font-size: em(14);
+                        padding: 10px;
+                        border-top: solid 1px #84acda;
+                        font-family: $book;
+                        &:first-child {
+                            padding-left: 20px;
+                            font-weight: bold;
+                        }
+                        &:last-child {
+                            text-align: right;
+                            font-weight: bold;
+                            color: #0657b3;
+                            padding-right: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,135 @@
+header{
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    .btn-default{
+        border: solid 1px $lightGreen;
+        background: transparent;
+        color: $lightGreen;
+        text-shadow: none;
+        padding: 6px 12px;
+        @include breakpoint(md-down){
+            font-size: em(16);
+        }        
+    }
+    .container{
+        @media (min-width: 1400px){
+            width: 1370px;
+        }
+    }
+    .navbar-proguiden{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-bottom: 0px;
+        border: none;
+        background: $green;
+        .navbar-form{
+            margin: 0px 0px 0px 30px;
+            width: 30%;
+            @media (max-width: 1400px){
+                width: auto;
+            }
+            @include breakpoint(lg-down){
+                width: 17%;
+                margin: 0px 0px 0px 0px;
+            }
+            @include breakpoint(md-down){
+                width: 100%;
+                padding-top: 30px;
+            }            
+            .form-group{
+                position: relative;
+                width: 100%;
+                &:after{
+                    content: "\f002";
+                    font: normal normal normal 22px/1 FontAwesome;
+                    text-rendering: auto;
+                    display: inline-block;
+                    color: $green;
+                    position: absolute;
+                    right: 20px;
+                    top: 15px;
+                }
+                .form-control{
+                    @include placeholderColor(#93a36e);
+                    border-radius: 5px;
+                    border: none;
+                    height: 50px;
+                    width: 100%;
+                    padding-right: 50px;
+                    color: #93a36e;
+                }
+            }
+            
+        }
+        .brand{
+            @extend .logo;
+            padding: 0px;
+            @include breakpoint(sm-down){
+                padding-left: 15px;
+            }
+        }
+        .navbar-nav{
+            @include breakpoint(md-down){
+                float: none!important;
+                margin: 7.5px 0px;
+                clear: both;
+                text-align: center;
+                padding-top: 30px;
+                font-size: em(16);
+            }
+            @include breakpoint(xs-down){
+                margin: 0px;
+            }            
+            li{
+                @include breakpoint(md-down){
+                    float: none;
+                    display: inline-block;
+                }
+                @include breakpoint(xs-down){
+                    display: block;
+                    width: 100%;
+                }                
+                a{
+                    color: $lightGreen;
+                    text-shadow: none;
+                    @include breakpoint(lg-down){
+                        padding: 10px;
+                    }
+                    @include breakpoint(md-down){
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                    }                    
+                    &:hover, &:focus{
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+        @include breakpoint(md-down){
+            .navbar-header {
+                float: none;
+            }
+            .navbar-toggle {
+                display: block;
+                border: solid 1px #FFF;
+                .icon-bar{
+                    background: #FFF;
+                }
+            }
+            .navbar-collapse {
+                @include breakpoint(xs-down){
+                    max-height: unset;
+                }                
+                overflow-x: hidden !important;
+                &.collapse {
+                    display: none!important;
+                }
+                &.in {
+                    display: block!important
+                }
+            }
+        }
+    }
+}

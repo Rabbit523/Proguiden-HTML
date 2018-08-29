@@ -1,0 +1,126 @@
+.product-guides{
+    display: block;
+    width: 100%;
+    padding: 110px 0px;
+    margin: 0px;
+    background: $green-bg;
+    
+    .title{
+        h2{
+            font-size: em(18);
+            margin: 0px;
+            color: $green;
+            font-family: $regular;
+            font-weight: bold;
+            display: block;
+            max-width: 50%;
+            float: left;
+        }
+        a{
+            color: $green-text;
+            font-size: em(18);
+            font-weight: bold;
+            float: right;
+            max-width: 50%;
+            &:hover{
+                color: $green-text;
+            }
+        }
+    }
+    
+    .product{
+        display: block;
+        margin-top: 40px;
+        figure{
+            a{
+                display: block;
+            }
+        }
+        .info-product{
+            padding: 20px;
+            background: #FFF;
+            time{
+                color: #7a7f6e;
+            }
+            h3{
+                color: #1c2702;
+                margin: 10px 0px 20px 0px;
+                a{
+                    color: #1c2702;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+            p{
+                line-height: 25px;
+                color: #1c2702;
+                font-size: em(12);
+                font-family: 'Gotham-Book';
+                a{
+                    color: #1c2702;
+                    display: block;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+            .view-more{
+                color: $green;
+                margin-top: 15px;
+                margin-bottom: 5px;
+                display: block;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+        &.big{
+            background: #FFF;
+            .info-product{
+                h3{
+                    font-size: em(30);                    
+                }
+            }
+            .view-more{
+                font-size: em(18);
+            }
+        }
+        &.small{
+            background: #FFF;
+            .info-product{
+                padding: 15px;
+                h3{
+                    font-size: em(21);                    
+                }
+            }
+            time{
+                font-size: em(14);
+            }
+        }
+        &.medium{
+            width: 100%;
+            display: block;
+            float: left;
+            background: #FFF;
+            figure{
+                width: 25%;
+                float: left;
+            }
+            .info-product{
+                padding: 10px 20px;
+                width: 75%;
+                float: left;
+                h3{
+                    font-size: em(24);
+                    margin-top: 5px;
+                    margin-bottom: 10px;
+                }
+            }
+            .view-more{
+                font-size: em(18);
+                margin: 0px;
+            }
+        }
+    }
+}

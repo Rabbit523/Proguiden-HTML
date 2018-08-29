@@ -1,0 +1,31 @@
+.new-stores{
+    h2{
+        color: $green-text;
+        font-size: em(18);
+    }
+    @media (min-width: 992px){
+        .col-md-special {
+            width: 12.5%;
+        }
+    }
+    .item{
+        border: solid 1px #cfcfcf;
+        transition: all 0.2s ease-Out;
+        max-height: 116.25px;
+        @include breakpoint(md-down){
+            max-height: 155px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        &:hover{
+            border-color: $green;
+        }
+        figure{
+            margin: 0px;
+            display: block;
+            a{
+                display: block;
+            }
+        }
+    }
+}

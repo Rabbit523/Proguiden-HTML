@@ -1,0 +1,11 @@
+.items-show {
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    strong {
+        font-weight: bold;
+        font-size: em(18);
+        margin-top: 20px;
+        display: block;
+    }
+}

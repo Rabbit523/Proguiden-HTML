@@ -1,0 +1,74 @@
+.box-left {
+    position: relative;
+    &:after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 100%;
+        position: absolute;
+        background: #d7d7d7;
+        right: -60px;
+        top: 0px;
+        @include breakpoint(md-down) {
+            display: none;
+        }
+    }
+    .alert-box {
+        font-family: $book;
+        font-size: em(16);
+        border-style: solid;
+        border-width: 1px;
+        margin-bottom: 15px;
+        padding: 15px 20px;
+        &.warning {
+            background: #fcf8e3;
+            border-color: #e8e1bb;
+            color: #927035;
+        }
+        &.error {
+            background: #fff1f1;
+            color: #923535;
+            border-color: #f7b7b7;
+        }
+        &.saved {
+            background: #dbecff;
+            border-color: #84acda;
+            color: #0f86c2;
+        }
+    }
+    .form-wrapper {
+        margin-top: 20px;
+        padding-bottom: 50px;
+        hr {
+            border-color: #d7d7d7;
+        }
+        .gray-text {
+            font-size: em(14);
+            color: #535353;
+            font-family: $book;
+            margin: 20px 0px 20px;
+            line-height: 25px;
+        }
+        .wrapper-radios {
+            margin-bottom: 30px;
+            .col-12 {
+                padding-right: 0px;
+                padding-left: 0px;
+                @include breakpoint(md-down) {
+                    margin-bottom: 20px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+                &:last-child {
+                    padding-right: 15px;
+                }
+                &:first-child {
+                    padding-left: 15px;
+                }
+            }
+        }
+        .form-group {
+            @extend .form-group-proguiden;
+        }
+    }
+}

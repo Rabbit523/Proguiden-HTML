@@ -1,0 +1,126 @@
+.other-deals {
+    display: block;
+    width: 100%;
+    background: $green-bg;
+    padding: 0px 0px 50px;
+    .title {
+        h3 {
+            font-weight: bold;
+            font-size: em(25);
+            color: $green-text;
+        }
+        p {
+            color: #6f7762;
+            font-weight: 500;
+            font-size: em(16);
+        }
+    }
+    .deal {
+        height: 100%;
+        background: #FFF;
+        display: block;
+        padding: 30px 15px;
+        margin-top: 30px;
+        border: solid 1px #d7d7d7;
+        box-shadow: 0px 3px 0px 0px $green;
+        .info-company {
+            display: block;
+            width: 70%;
+            margin: 30px auto;
+            border-bottom: solid 1px #e3e8d7;
+            padding-bottom: 20px;
+            @include breakpoint(lg-down) {
+                width: 100%;
+            }
+            span {
+                color: #6f7762;
+                font-size: em(12);
+            }
+            h3 {
+                color: $green-text;
+                font-size: em(18);
+                margin: 0px;
+                font-weight: bold;
+            }
+        }
+        .options {
+            display: block;
+            width: 70%;
+            margin: 0px auto;
+            border-bottom: solid 1px #e3e8d7;
+            padding-bottom: 20px;
+            @include breakpoint(lg-down) {
+                width: 100%;
+            }
+            span {
+                display: inline-block;
+                background: #eff6ef;
+                border-radius: 100px;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+                img {
+                    width: 20px;
+                    margin-top: 5px;
+                }
+            }
+        }
+        .more-information {
+            display: block;
+            width: 70%;
+            margin: 20px auto;
+            border-bottom: solid 1px #e3e8d7;
+            padding-bottom: 20px;
+            @include breakpoint(lg-down) {
+                width: 100%;
+            }
+            a {
+                color: $green;
+            }
+        }
+        .speed {
+            display: block;
+            width: 70%;
+            margin: 0px auto;
+            border-bottom: solid 1px #e3e8d7;
+            padding-bottom: 20px;
+            font-size: em(18);
+            font-weight: bold;
+            color: $green-text;
+            @include breakpoint(lg-down) {
+                width: 100%;
+            }
+            p {
+                margin: 0px;
+            }
+            small {
+                color: #6f7762;
+                font-weight: 500;
+            }
+        }
+        .price {
+            display: block;
+            width: 70%;
+            margin: 20px auto;
+            padding-bottom: 20px;
+            font-size: em(18);
+            font-weight: bold;
+            color: $green-text;
+            @include breakpoint(lg-down) {
+                width: 100%;
+            }
+            p {
+                margin: 0px;
+            }
+            small {
+                color: #6f7762;
+                font-weight: 500;
+            }
+        }
+        .btn {
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+    }
+}

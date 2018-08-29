@@ -1,0 +1,49 @@
+.chasback{
+    display: block;
+    width: 100%;
+    background: url('../assets/images/bg-cashback.png') no-repeat center center;
+    padding: 120px 0px;
+    margin: 0px;
+    @include breakpoint(sm-down){
+        background-size: cover;
+    }    
+    h2{
+        color: #2a1402;
+        font-family: $regular;
+        font-weight: bold;
+        font-size: em(36);
+        margin: 0px auto;
+        width: 45%;
+        display: block;
+        @include breakpoint(md-down){
+            width: 80%;
+        }        
+        span{
+            color: #ec7413;
+        }
+    }
+    .item-cashback{
+        margin-top: 50px;
+        figure{
+            width: 135px;
+            height: 135px;
+            border-radius: 100px;
+            background: #FFF;
+            margin: 0px auto 20px;
+            display: block;
+            box-shadow: 1px 5px 5px 0px #acacac;
+        }
+        p{
+            font-weight: bold;
+            font-size: em(20);
+        }
+    }
+    .btn-orange{
+        background: #ec7413;
+        color: #FFF;
+        margin-top: 50px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: em(18);
+    }
+}

@@ -1,0 +1,29 @@
+.sidebar-product-list{
+    display: block;
+    padding: 40px 0px;
+    h1{
+        font-size: em(20);
+        color: $green-text;
+        font-weight: normal;
+        margin: 0px 0px 10px 0px;
+    }
+    ul{
+        padding: 0px;
+        margin: 0px 0px 25px 0px;
+        color: $green-text;
+        list-style: none;
+        li{
+            strong{
+                font-size: em(16);
+                color: $green;
+            }
+            a{
+                color: $green-text;
+                &:hover{
+                    text-decoration: none;
+                    color: $green;
+                }
+            }
+        }
+    }
+}

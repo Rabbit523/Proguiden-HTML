@@ -1,0 +1,162 @@
+.product-top-list{
+    background: #FFF;
+    height: 100%;
+    padding: 40px 0px;
+    .main-img{
+        background: $green-bg;
+        padding: 50px 50px 0px;
+    }
+    h1{
+        color: $green;
+        font-size: em(35)
+    }
+    h3{
+        font-size: em(18);
+        color: $green-text;
+        margin-bottom: 30px;
+    }
+    .info-article{
+        span{
+            font-family: 'Gotham-Book';
+            color: $green-text;
+            strong{
+                font-family: $regular;
+            }
+            &:after{
+                content: "\2022";
+                display: inline;
+                margin: 0px 10px;
+            }
+            &:last-child{
+                &:after{
+                    display: none;
+                }
+            }
+        }
+    }
+    .share{
+        display: block;
+        margin: 20px 0px;
+        a{
+            display: inline-block;
+            color: #FFF;
+            margin-right: 10px;
+            margin-top: 15px;            
+            &.facebook{
+                background: #516eab;
+                i{
+                    border-right: 1px solid rgba(255,255,255,0.5);
+                    padding-right: 10px;
+                    margin-right: 10px;
+                }
+            }
+            &.twitter{
+                background: #29c5f6;
+                i{
+                    border-right: 1px solid rgba(255,255,255,0.5);
+                    padding-right: 10px;
+                    margin-right: 10px;
+                }
+            }
+            &.google-plus{
+                background: #eb4026;
+            }
+            &.pinterest{
+                background: #ca212a;
+            }
+        }
+    }
+    .the-content{
+        font-family: 'Gotham-Book';
+        font-size: em(16);
+        display: block;
+        border-top: 3px solid #dce7dc;
+        padding-top: 20px;
+        color: $green-text;
+        p{
+            a{
+                color: $green;
+            }
+        }
+        .list-top{
+            border-top: 3px solid #dce7dc;
+            padding-top: 20px;
+            margin-bottom: 30px;
+            .product-item{
+                padding-top: 10px;
+                padding-bottom: 20px;
+                border-bottom: solid 1px #dce7dc;
+                margin-bottom: 10px;
+                .number{
+                    height: 100%;
+                    span{
+                        background: #dce7dc;
+                        font-family: $regular;
+                        font-size: em(18);
+                        display: block;
+                        width: 45px;
+                        height: 45px;
+                        border-radius: 100px;
+                        line-height: 45px;
+                        text-align: center;
+                    }
+                }
+                .product-img{
+                    height: 100%;
+                    border-left: solid 1px #dce7dc;
+                    border-right: solid 1px #dce7dc;
+                }
+                .product-content{
+                    height: 100%;
+                    @include breakpoint(sm-down){
+                        margin-top: 20px;
+                    }
+                    h5{
+                        font-family: $regular;
+                        font-size: em(18);
+                        color: $green-text;
+                    }
+                    ul{
+                        padding: 0px 0px 0px 20px;
+                        font-size: em(12);
+                        a{
+                            color: $green;
+                            font-family: $regular;
+                        }
+                    }
+                    .features-group{
+                        display: none;
+                        .feature{
+                            margin-top: 10px;
+                            span{
+                                strong{
+                                    font-family: $regular;
+                                }
+                            }
+                        }
+                    }
+                }
+                .product-price{
+                    border-left: solid 1px #dce7dc;
+                    height: 100%;
+                    @include breakpoint(sm-down){
+                        border: none;
+                    }
+                    .rating-box{
+                        margin-bottom: 10px;
+                        padding-top: 20px;
+                    }
+                    .btn{
+                        box-shadow: 0px 2px 0px 0px #415c04;
+                    }
+                    span{
+                        display: block;
+                        color: $green-text;
+                        margin-top: 10px;
+                        font-family: $regular;
+                    }
+                }
+            }
+        }
+    }
+}

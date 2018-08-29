@@ -1,0 +1,231 @@
+.general-wrapper {
+    display: block;
+    width: 100%;
+    font-family: $regular;
+    .navbar-toggle {
+        border: solid 1px #FFF;
+        z-index: 20;
+        .icon-bar {
+            background: #FFF;
+        }
+        @include breakpoint (sm-down) {
+            display: block;
+        }
+    }
+    .page-container {
+        padding-left: $sidebar-width;
+        min-height: 100vh;
+        background: #f1f5e9;
+        position: relative;
+        z-index: 5;
+        transition: all 0.3s ease-Out;
+        -moz-transition: all 0.3s ease-Out;
+        -o-transition: all 0.3s ease-Out;
+        -webkit-transition: all 0.3s ease-Out;
+        @include breakpoint(lg-down) {
+            padding-left: 220px;
+        }
+        @media only screen and (max-width: 767.999px) {
+            padding-left: 0px;
+        }
+        .box-top {
+            display: block;
+            padding: 10px 0px;
+            border-bottom: solid 1px #d7d7d7;
+            .breadcrumb {
+                color: #939d81;
+                margin-bottom: 0px;
+                @include breakpoint(sm-down) {
+                    margin-bottom: 15px;
+                }
+                a {
+                    color: #939d81;
+                }
+            }
+            .title {
+                h1 {
+                    color: $green-text;
+                    font-weight: bold;
+                    font-size: em(25);
+                    margin: 0px;
+                }
+            }
+            .btn-green {
+                border-radius: 0px;
+                padding: 12px 0;
+            }
+            .btn-light-green {
+                padding: 14px 0;
+            }
+            .form-group {
+                margin-bottom: 0px;
+                .form-control {
+                    height: 50px;
+                    border-radius: 0px;
+                    border-color: #d7d7d7;
+                    background-color: #fff;
+                }
+            }
+            .search-form {
+                @include breakpoint(xs-down) {
+                    margin-top: 15px;
+                }
+                .form-group {
+                    margin-right: -15px;
+                }
+            }
+        }
+        .box-filter {
+            display: block;
+            padding: 10px 0px;
+            .btn-light-green {
+                padding-top: 14px;
+                padding-bottom: 14px;
+            }
+            .bulk {
+                display: block;
+                float: left;
+                width: 22%;
+                min-height: 1px;
+                padding-left: 15px;
+                @include breakpoint(lg-down) {
+                    width: 27%;
+                }
+                @include breakpoint(md-down) {
+                    width: 40%;
+                }
+                @include breakpoint(xs-down) {
+                    width: 100%;
+                }
+                .form-group {
+                    display: block;
+                    width: 70%;
+                    float: left;
+                    margin-right: 3px;
+                    @media only screen and (max-width: 1330px) {
+                        width: 65%;
+                    }
+                    @include breakpoint(sm-down) {
+                        width: 64%;
+                    }
+                    &.without-label {
+                        select {
+                            padding-top: 5px;
+                            font-family: 'Gotham-Book';
+                            color: #818181;
+                        }
+                    }
+                }
+            }
+            .categories {
+                display: block;
+                float: left;
+                width: 35%;
+                min-height: 1px;
+                padding-left: 5px;
+                @media only screen and (max-width: 1330px) {
+                    width: 37%;
+                }
+                @include breakpoint(lg-down) {
+                    width: 41%;
+                }
+                @include breakpoint(md-down) {
+                    width: 60%;
+                }
+                @include breakpoint(xs-down) {
+                    width: 100%;
+                    padding-left: 15px;
+                }
+                .form-group {
+                    display: block;
+                    width: 35%;
+                    float: left;
+                    margin-right: 3px;
+                    @include breakpoint(lg-down) {
+                        width: 34%;
+                    }
+                }
+            }
+            .filter-pager {
+                display: block;
+                float: right;
+                width: 43%;
+                min-height: 1px;
+                padding-right: 15px;
+                text-align: right;
+                @media only screen and (max-width: 1330px) {
+                    width: 40%;
+                }
+                @include breakpoint(lg-down) {
+                    width: 32%;
+                }
+                @include breakpoint(md-down) {
+                    width: 100%;
+                }
+                @include breakpoint(xs-down) {
+                    width: 100%;
+                }
+                .btn-light-green {
+                    color: $green;
+                    box-shadow: none;
+                    vertical-align: top;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    @media only screen and (max-width: 1330px) {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                    }
+                    @include breakpoint(lg-down) {
+                        padding-right: 10px;
+                        padding-left: 10px;
+                    }
+                    @include breakpoint(md-down) {
+                        padding-right: 20px;
+                        padding-left: 20px;
+                    }
+                    &:hover {
+                        color: #FFF;
+                    }
+                }
+                p {
+                    display: inline-block;
+                    margin: 0px 5px 0px 0px;
+                    @media only screen and (max-width: 1330px) {
+                        font-size: em(12);
+                        margin: 0px;
+                    }
+                    @include breakpoint(lg-down) {
+                        font-size: em(11);
+                    }
+                }
+                .form-control {
+                    display: inline-block;
+                    width: 50px;
+                    height: 50px;
+                    text-align: center;
+                    border-radius: 0px;
+                }
+            }
+            .form-group {
+                &.label-green-arrow {
+                    label {
+                        font-size: em(10);
+                        top: 5px;
+                    }
+                    select {
+                        height: 50px;
+                        font-size: em(12);
+                        padding-bottom: 5px;
+                        padding-top: 18px;
+                    }
+                }
+            }
+        }
+        .page-content {
+            @import "campaigns/main";
+            @import "categories/main";
+            @import "customers/main";
+            @import "sides/main";
+        }
+    }
+}

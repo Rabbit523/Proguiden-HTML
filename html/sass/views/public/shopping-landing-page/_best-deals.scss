@@ -1,0 +1,72 @@
+.best-deals{
+    display: block;
+    width: 100%;
+    padding: 0px 0px 75px 0px;
+    background: $green-bg;
+    text-align: center;
+    .title{
+        h3{
+            font-size: em(18);
+            margin: 0px;
+            color: $green;
+            font-family: $regular;
+            font-weight: bold;
+            display: block;
+            text-align: left;
+        }
+    }
+    .carousel-best-deals{
+        margin-top: 10px;
+        .item-small { 
+            width: 220px;
+            display: block;
+            .product{
+                @extend .box-product;
+                margin-top: 0px;
+                margin-bottom: 15px;
+                text-align: left;
+            }
+        }
+        .item-big { 
+            width: 450px;
+            display: block;
+            .product{
+                @extend .box-product;
+                margin-top: 0px;
+                text-align: left;
+                figure{
+                    height: 513px;
+                }
+                .info-product{
+                    small{
+                        display: block;
+                        clear: both;
+                    }
+                }
+            }
+        }
+        .carousel-arrow{
+            cursor: pointer;
+            color: $green;
+            font-size: em(30);
+            margin: 0px 20px;
+            line-height: 0;
+            position: relative;
+            top: 5px;
+        }
+        .lSPager{
+            display: inline-block;
+            margin-top: 0px !important;
+            li{
+                &.active{
+                    a{
+                        background-color: $green;
+                    }
+                }
+                a{
+                    background-color: #b3c3b3;
+                }
+            }
+        }
+    }
+}

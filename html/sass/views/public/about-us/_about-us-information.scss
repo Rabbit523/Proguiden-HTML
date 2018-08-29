@@ -1,0 +1,38 @@
+.about-us-information {
+    background: #FFF;
+    margin: 50px 0px;
+    padding: 20px;
+    .item {
+        h3 {
+            @include title(18, $green-text);
+            margin: 0px 0px 15px 0px;
+        }
+        p {
+            font-family: 'Gotham-Book';
+            font-size: em(14);
+            color: $lightGray;
+        }
+        a {
+            color: $green;
+            font-family: 'Gotham-Book';
+        }
+        .social-net {
+            margin-bottom: 10px;
+            ul {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                li {
+                    display: inline-block;
+                    color: #b3b2b3;
+                    a {
+                        color: #b3b2b3;
+                        &:hover {
+                            color: #5ea9dd;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

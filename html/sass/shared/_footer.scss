@@ -1,0 +1,88 @@
+footer{
+    display: block;
+    width: 100%;
+    color: #FFF;
+    padding: 55px 0px 40px 0px;
+    .top-footer{
+        display: block;
+        width: 100%;
+        margin-bottom: 95px;
+        @include breakpoint(sm-down){
+            margin-bottom: 30px;
+        }        
+        .menu-footer{
+            ul{
+                list-style: none;
+                padding: 0px;
+                margin: 0px;
+                display: block;
+                @include breakpoint(md-down){
+                    margin-bottom: 40px;
+                }                
+                strong{
+                    font-size: em(18);
+                    margin-bottom: 25px;
+                    display: block;
+                    @include breakpoint(lg-down){
+                        font-size: em(14);
+                    }
+                }
+                li{
+                    margin-bottom: 10px;
+                    a{
+                        display: block;
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+        .brand{
+            text-align: right;
+            @extend .logo;
+            @include breakpoint(md-down){
+                text-align: center;
+                margin-top: 30px;
+            }            
+        }
+    }
+    .bot-footer{
+        .social-net{
+            ul{
+                list-style: none;
+                padding: 0px;
+                margin: 0px;
+                display: block;
+                @include breakpoint(sm-down){
+                    text-align: center;
+                    margin-bottom: 40px;
+                    font-size: em(20);
+                }
+                li{
+                    display: inline-block;
+                    a{
+                        display: block;
+                        color: #FFF;
+                        .fa-inverse{
+                            color: $green;
+                        }
+                    }
+                }
+            }
+        }
+        .legal{
+            p{
+                margin: 0px;
+                text-align: right;
+                @include breakpoint(sm-down){
+                    text-align: center;
+                }                
+                span{
+                    font-size: em(6);
+                    margin: 0px 20px;
+                    position: relative;
+                    top: -5px;
+                }
+            }
+        }
+    }
+}

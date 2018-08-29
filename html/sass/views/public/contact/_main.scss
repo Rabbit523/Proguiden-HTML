@@ -1,0 +1,9 @@
+.proguiden-contact {
+    background: $green-bg;
+    .wrapper-page {
+        display: block;
+        padding: 50px 0px;
+        @import "map";
+        @import "form";
+    }
+}

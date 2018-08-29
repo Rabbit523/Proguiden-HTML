@@ -1,0 +1,36 @@
+.stores{
+    background: #FFF;
+    display: block;
+    padding: 80px 0px;
+    h3{
+        color: $green;
+        margin-top: 0px;
+        span{
+            color: $green-text;
+            display: block;
+        }
+    }
+    .list{
+        columns: 6;
+        -moz-columns: 6;
+        -webkit-columns: 6;
+        margin-top: 40px;
+        @include breakpoint(md-down){
+            columns: 3;
+            -moz-columns: 3;
+            -webkit-columns: 3;
+        }
+        @include breakpoint(xs-down){
+            columns: 2;
+            -moz-columns: 2;
+            -webkit-columns: 2;
+        }
+        a{
+            color: $green-text;
+            display: block;
+            &:hover{
+                color: $green;
+            }
+        }
+    }
+}
